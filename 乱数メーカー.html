@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Main.css" />
+    <title>乱数メーカー</title>
+  </head>
+  <body>
+    <header>
+      <div class="menu-wrapper">
+        <h1 class="title">乱数メーカー</h1>
+        <input type="checkbox" id="menu-btn" class="menu-btn" />
+        <label for="menu-btn" class="menu-label" id="toggle-button">設定</label>
+        
+        <ul class="menu-list">
+          <li><a href="#">他のメーカー</a></li>
+          <li><a href="#">暇 つ ぶ し</a></li>
+          <li><a href="#">H O M E</a></li>
+          <li><a href="https://github.com/Kazunomiya-Tumugi">G i t h u b</a></li>
+        </ul>
+        <div class="menu-overlay"></div>
+      </div>
+    </header>
+    <div class="generate">
+      <div class="range">
+        <label for="min">最小値:</label>
+        <input type="number" id="min" min="-100" max="100" value="0" />
+        <label for="max">最大値:</label>
+        <input type="number" id="max" min="-100" max="9999" value="38" />
+        <label for="num">表示数:</label>
+        <input type="number" id="num" min="1" max="10" value="1">
+        <label for="exclude-same">同じ数を除外する</label>
+        <input type="checkbox" id="exclude-same" name="exclude-same">
+      </div>
+      <p class="result" id="result">--</p>
+      <div class="generate-box">
+        <button id="generate-btn" class="generate-btn">乱数を生成</button>
+        <button id="generate-trans" class="hide-btn">乱数を隠す</button>
+      </div>
+       
+      <script src="script.js"></script>
+    </div>
+  </body>
+</html>
